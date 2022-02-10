@@ -2,6 +2,8 @@
   <title>EasyDiet</title>
   <script>
     const path = window.location.pathname.replace('/easydiet', '');
+    console.log('Setting path:', path);
+    localStorage.setItem('path', path);
     window.location.href = 'https://jacobklein.github.io/easydiet';
   </script>
 </head>
