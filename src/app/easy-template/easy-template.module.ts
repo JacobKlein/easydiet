@@ -1,3 +1,4 @@
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,9 +12,15 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSortModule } from '@angular/material/sort';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EasyErrorComponent } from './component/core/easy-error.component';
 import { EasyStateComponent } from './component/core/easy-state.component';
@@ -98,15 +105,24 @@ const pipes: Array<any> = [EasyFieldErrorPipe];
     MatIconModule,
     MatAutocompleteModule,
     MatDatepickerModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    DragDropModule,
+    MatStepperModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
   ],
-    exports: [
-        ...coreComponents,
-        ...formComponents,
-        ...iconComponents,
-        ...layoutComponents,
-        EasyFieldErrorPipe,
-    ],
+  exports: [
+    ...coreComponents,
+    ...formComponents,
+    ...iconComponents,
+    ...layoutComponents,
+    EasyFieldErrorPipe,
+  ],
   providers: [...pipes, EasyApiService, AppService]
 })
 export class EasyTemplateModule {
