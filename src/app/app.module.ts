@@ -15,8 +15,8 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 
 import { AppRoutes } from './app.routes';
-import { EasyTemplateModule } from './easy-template/easy-template.module';
 import { PlaceholderComponent } from './easy-template/component/placeholder.component';
+import { EasyTemplateModule } from './easy-template/easy-template.module';
 
 
 // noinspection JSUnusedGlobalSymbols
@@ -34,7 +34,7 @@ import { PlaceholderComponent } from './easy-template/component/placeholder.comp
 //   EasyToastService
 // ];
 const productionProviders: Array<any> = environment.production ? [
-  {provide: APP_BASE_HREF, useValue: '/app'},
+  {provide: APP_BASE_HREF, useValue: '/easydiet'},
 ] : [];
 
 @NgModule({
