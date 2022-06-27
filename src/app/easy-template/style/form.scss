@@ -1,0 +1,104 @@
+@import "colour";
+
+.easy-field-option-text-white {
+  color: white;
+}
+
+.easy-field-option-text-white:hover {
+  color: black;
+}
+
+.easy-field-option-red {
+  @extend .easy-field-option-text-white;
+  background-color: $red;
+}
+
+.easy-field-option-pink {
+  @extend .easy-field-option-text-white;
+  background-color: $pink;
+}
+
+.easy-field-option-purple {
+  @extend .easy-field-option-text-white;
+  background-color: $purple;
+}
+
+
+.easy-field-option-deep-purple {
+  @extend .easy-field-option-text-white;
+  background-color: $deepPurple;
+}
+
+.easy-field-option-indigo {
+  @extend .easy-field-option-text-white;
+  background-color: $indigo;
+}
+
+.easy-field-option-blue {
+  @extend .easy-field-option-text-white;
+  background-color: $blue;
+}
+
+.easy-field-option-light-blue {
+  @extend .easy-field-option-text-white;
+  background-color: $lightBlue;
+}
+
+.easy-field-option-cyan {
+  @extend .easy-field-option-text-white;
+  background-color: $cyan;
+}
+
+.easy-field-option-teal {
+  @extend .easy-field-option-text-white;
+  background-color: $teal;
+}
+
+.easy-field-option-green {
+  @extend .easy-field-option-text-white;
+  background-color: $green;
+}
+
+.easy-field-option-light-green {
+  @extend .easy-field-option-text-white;
+  background-color: $lightGreen;
+}
+
+.easy-field-option-lime {
+  @extend .easy-field-option-text-white;
+  background-color: $lime;
+}
+
+.easy-field-option-yellow {
+  background-color: $yellow;
+}
+
+.easy-field-option-amber {
+  @extend .easy-field-option-text-white;
+  background-color: $amber;
+}
+
+.easy-field-option-orange {
+  @extend .easy-field-option-text-white;
+  background-color: $orange;
+}
+
+.easy-field-option-deep-orange {
+  @extend .easy-field-option-text-white;
+  background-color: $deepOrange;
+}
+
+.easy-field-option-brown {
+  @extend .easy-field-option-text-white;
+  background-color: $brown;
+}
+
+.easy-field-option-grey {
+  @extend .easy-field-option-text-white;
+  background-color: $grey;
+}
+
+.easy-field-option-blue-grey {
+  @extend .easy-field-option-text-white;
+  background-color: $blueGrey;
+}

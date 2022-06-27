@@ -1,0 +1,10 @@
+<mat-form-field appearance="outline">
+  <mat-label *ngIf="hasLabel()">{{getLabel()}}</mat-label>
+  <mat-select [formControl]="getFormControl()" [multiple]="multi ? true:null">
+    <mat-option *ngFor="let option of getFieldOptions()" [value]="option.value"
+                [class]="option.colour">
+      {{option.label}}
+    </mat-option>
+  </mat-select>
+  <mat-error>{{getControlErrors() | easyFieldError}}</mat-error>
+</mat-form-field>

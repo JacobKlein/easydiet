@@ -1,0 +1,32 @@
+<div *ngIf="field == null">
+  Empty Field Config
+</div>
+
+
+<ng-container *ngIf="field!= null && field.config.visible">
+
+
+  <ng-container [ngSwitch]="field.config.type">
+
+    <easy-text-field *ngSwitchCase="isTextField() ? field.config.type : ''"
+                     [field]="field" [label]="label" (blur)="onBlur()">
+    </easy-text-field>
+
+    <easy-select-field *ngSwitchCase="isSelectField() ? field.config.type : ''"
+                       [multi]="field.config.type == 'multiSelect'"
+                       [field]="field"
+                       [label]="label">
+    </easy-select-field>
+
+    <easy-file-field *ngSwitchCase="'file'" [field]="field" [label]="label"></easy-file-field>
+    <easy-autocomplete-field *ngSwitchCase="'autoComplete'" [field]="field" [label]="label"></easy-autocomplete-field>
+    <easy-checkbox-field *ngSwitchCase="'checkbox'" [field]="field" [label]="label"></easy-checkbox-field>
+    <easy-date-field *ngSwitchCase="'date'" [field]="field" [label]="label"></easy-date-field>
+
+    <div *ngSwitchDefault>
+      Unknown Field {{field.config|json}}
+    </div>
+  </ng-container>
+
+
+</ng-container>

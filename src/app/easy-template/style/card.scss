@@ -1,0 +1,122 @@
+@import "colour";
+
+.widget-container .easy-card .mat-card {
+  margin-bottom: 0;
+}
+
+.easy-card .mat-card {
+  margin-bottom: 24px;
+}
+
+
+.easy-card-text-white {
+  color: white;
+}
+
+.easy-card-text-white circle {
+  stroke: white;
+}
+
+.easy-card-text-white a:link, .easy-card-text-white a:visited, .easy-card-text-white a:hover, .easy-card-text-white a:active {
+  color: white;
+}
+
+.easy-card-primary .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $primary;
+}
+
+.easy-card-red .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $red;
+}
+
+.easy-card-pink .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $pink;
+}
+
+.easy-card-purple .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $purple;
+}
+
+
+.easy-card-deep-purple .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $deepPurple;
+}
+
+.easy-card-indigo .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $indigo;
+}
+
+.easy-card-blue .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $blue;
+}
+
+.easy-card-light-blue .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $lightBlue;
+}
+
+.easy-card-cyan .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $cyan;
+}
+
+.easy-card-teal .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $teal;
+}
+
+.easy-card-green .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $green;
+}
+
+.easy-card-light-green .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $lightGreen;
+}
+
+.easy-card-lime .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $lime;
+}
+
+.easy-card-yellow .mat-card {
+  background-color: $yellow;
+}
+
+.easy-card-amber .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $amber;
+}
+
+.easy-card-orange .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $orange;
+}
+
+.easy-card-deep-orange .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $deepOrange;
+}
+
+.easy-card-brown .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $brown;
+}
+
+.easy-card-grey .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $grey;
+}
+
+.easy-card-blue-grey .mat-card {
+  @extend .easy-card-text-white;
+  background-color: $blueGrey;
+}

@@ -1,0 +1,8 @@
+<div *ngIf="form == null">Invalid Form</div>
+
+<form (submit)="onSubmit($event)">
+
+  <easy-field *ngFor="let field of getFields()" [field]="field" (blurEvent)="onBlur()"></easy-field>
+
+  <button style="display: none" type="submit"></button>
+</form>

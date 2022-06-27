@@ -1,0 +1,2 @@
+<loading *ngIf="state!= null && state.loading && state.exception== null"></loading>
+<div *ngIf="state!=null && state.exception!= null">{{getErrorMessage()}}</div>

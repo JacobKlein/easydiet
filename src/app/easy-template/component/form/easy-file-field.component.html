@@ -1,0 +1,11 @@
+<div class="form-group file-field">
+  <label for="file-input" *ngIf="hasLabel()">{{getLabel()}}</label>
+  <div class="flex">
+    <easy-button (click)="input.click()">Upload File</easy-button>
+    <div style="display:flex; align-items: center;margin-left: 24px;">{{getFormControl().value?.name}}</div>
+  </div>
+
+  <input #input style="display: none" type="file" id="file-input" name="file-input" (change)="onUploadEvent($event)">
+
+</div>
+

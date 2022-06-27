@@ -1,0 +1,20 @@
+// -------------------------------- Margins ------------------------------ //
+$columns: 24;
+
+@mixin m-t-x {
+  @for $i from 1 through $columns {
+    .m-t-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+
+    .m-b-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+
+    .m-#{$i} {
+      margin: #{$i}px !important;
+    }
+  }
+}
+
+@include m-t-x;
