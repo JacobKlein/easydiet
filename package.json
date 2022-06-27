@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress --base-href /app/ ",
+    "build": "ng build --prod --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress --base-href /easydiet/ ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
