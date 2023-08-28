@@ -1,9 +1,0 @@
-<mat-form-field appearance="outline">
-  <mat-label *ngIf="hasLabel()">{{getLabel()}}</mat-label>
-  <input matInput
-         (blur)="onBlur()"
-         [type]="getType()"
-         [readonly]="getReadyOnly()"
-         [formControl]="getFormControl()">
-  <mat-error>{{getControlErrors() | easyFieldError}}</mat-error>
-</mat-form-field>
